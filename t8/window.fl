@@ -1,0 +1,51 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0302 
+header_name {.h} 
+code_name {.cxx}
+class UserInterface {open
+} {
+  Function {UserInterface()} {open
+  } {
+    Fl_Window w {
+      label {T-shirt Raffle} open selected
+      protected xywh {383 133 405 520} type Double box EMBOSSED_BOX hide
+    } {
+      Fl_Button {} {
+        label Delete
+        xywh {210 130 70 20}
+      }
+      Fl_Button {} {
+        label Insert
+        xywh {35 130 75 20}
+      }
+      Fl_Button {} {
+        label Update
+        xywh {125 130 70 20}
+      }
+      Fl_Button {} {
+        label OK
+        xywh {290 20 95 25}
+      }
+      Fl_Browser {} {
+        label dataBrowser
+        xywh {35 185 335 260}
+      }
+      Fl_Input {} {
+        label Id
+        xywh {65 90 215 25}
+      }
+      Fl_Input {} {
+        label Label
+        xywh {65 55 215 25}
+      }
+      Fl_Box {} {
+        label Title
+        xywh {35 163 340 22}
+      }
+      Fl_Input {} {
+        label Title
+        xywh {65 20 215 25}
+      }
+    }
+  }
+} 
