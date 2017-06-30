@@ -187,7 +187,7 @@ public:
   void insere_4(ofstream &output){
     output << "dataSet[seq]=[index,icons";
     for(int i = 0; i < campos.size(); i++){
-      output << ", " << campos[i].getId();
+      output << ", object." << campos[i].getId();
     }
     output << "];\n";
   }
@@ -199,7 +199,7 @@ public:
     <<"{ \"title\": \"Seq\", \"class\": \"center\" },\n"
     <<"{ \"title\": \"\", \"class\": \"center\" },\n";
     for(int i = 0; i < campos.size(); i++){
-	output << "{\"title\": \"" << campos[i].getLabel() << "\"},\n";
+	output << "{ \"title\": \"" << campos[i].getLabel() << "\"},\n";
     }
     output << "]\n" << "});\n";
   }
